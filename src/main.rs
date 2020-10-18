@@ -1,3 +1,8 @@
+pub mod utils;
+pub mod commands;
+pub mod config;
+pub mod constants;
+
 fn main() {
-    println!("Hello, world!");
+    utils::system::run_or_interrupt(commands::main);
 }
